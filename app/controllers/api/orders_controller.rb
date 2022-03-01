@@ -86,7 +86,6 @@ class Api::OrdersController < ApplicationController
 	end
 
 	def get_curr_pos(order_params)
-		binding.pry
 		Order.new(x_pos: get_x_pos(order_params[0]),
 			        y_pos: get_y_pos(order_params[0]),
 			        facing: get_facing(order_params[0]))
